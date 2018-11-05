@@ -144,6 +144,9 @@ namespace CloudCanards.Core.Algorithms
 			return (_start + index) & _mask;
 		}
 
-		public bool IsFull() => Count > _mask;
+		public bool IsFull()
+		{
+			return Count > _mask;
+		}
 	}
 }
